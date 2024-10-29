@@ -1,0 +1,1147 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Reddit+Mono:wght@200..900&family=Rubik+Mono+One&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box; /* Inclui padding e border nas dimensões */
+}
+
+:root {
+    --fonte-1-redit-mono: "Reddit Mono", monospace, sans-serif;
+    --fonte-1-nome: "Reddit Mono", monospace, sans-serif;
+    --fonte-2-tecnologias: "Reddit Mono", monospace, sans-serif;
+    --fonte-p-bold: "Reddit Mono", monospace, sans-serif;
+    --font-letter-card-tec: "Archivo Black", sans-serif;
+
+
+
+    --color-h1-titulo: rgb(225, 233, 249);
+    --color-h2-nome: rgb(255, 164, 0);
+    --color-p-branco: rgba(255, 255, 255, 0.9);
+    --color-p-tecnologias: #f7f7f7;
+    --color-autor-citacao: rgba(247, 247, 247, 0.45);
+    --color-icones: rgb(151, 166, 196);
+    --color-escuro-fonte: rgb(24, 24, 24);
+    --color-icone-fundo: rgb(37, 45, 72);
+    --color-softblue: rgb(185, 245, 216);
+    --color-darkblue: rgb(2, 7, 23);
+    --color-white-one: #f7f7f7;
+    --color-contrast-one: rgb(255, 164, 0);
+    --color-contrast-two: rgb(46, 149, 211);
+    --color-contrast-three: rgb(185, 245, 216);
+    --color-contrast-four: rgb(211, 225, 251);
+    --color-contrast-five: black;
+    --color-contrast-six: rgb(12, 16, 29);
+    --color-contrast-seven: rgb(143, 143, 143);
+    --color-contrast-eight: rgb(117, 117, 117);
+    --color-contrast-nine: rgb(190, 190, 190);
+    --color-contrast-ten: hwb(0 0% 100%);
+    --color-contrast-eleven: rgb(39, 39, 39);
+    --color-contrast-letter-card-tec: rgb(146, 167, 198);
+
+
+    --shadow-h1-titulo: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    --shadow-h2-tecnologias: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    --shadow-h3-tecnologias: 1px 1px 2.5px rgba(0, 0, 0, 0.4);
+    --shadow-p-tecnologias: 2px 2px 3px rgba(0, 0, 0, 0.45);
+    --shadow-icon-one: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* 
+    rubik-mono-one-regular {
+        font-family: "Rubik Mono One", monospace;
+
+    reddit-mono-<uniquifier> {
+        font-family: "Reddit Mono", monospace;
+        font-optical-sizing: auto;
+
+    archivo-black-regular {
+    font-family: "Archivo Black", sans-serif; 
+*/
+/*---------------------------------seção um skilu ---------------------------- */
+html {
+    scroll-behavior: smooth;  /* Rolagem suave */
+  }
+  
+.background-secao-um {
+    position: relative;
+    width: 100%;                    
+    height: 1080px;
+    background-image: url(../images/background/background-secao-um-matheus-massuda.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-secao-um {
+    position: relative;
+    width: 100%;  /* Largura da div mãe */
+}
+
+.container-cabecalho {
+    position: absolute;  /* Permite que a div filha seja posicionada em relação à div mãe */
+    top: 0;  /* Encosta no topo da div mãe */
+    left: 0;  /* Inicia na borda esquerda da div mãe */
+    width: 100%;  /* Largura da div filha (opcional) */
+    height: 136px;  /* Altura da div filha como 10% da altura da div mãe */
+    display: flex;
+    align-items: center;  /* Alinha itens verticalmente ao centro */
+    justify-content: space-between;  /* Distribui espaço entre os itens */
+    padding: 0 10%;  /* Adiciona 10% de padding nas laterais */
+
+    background-color: #4455681a;  /* Cor de fundo da div filha (opcional) */
+    border: 1px solid aquamarine;
+}
+
+.meu-nome-menu {
+    max-height: 80%;  /* Ajusta a altura máxima do logo */
+    margin-top: -30px;
+}
+
+.menu-de-navegação ul {
+    list-style: none;  /* Remove marcadores da lista */
+    display: flex;  /* Ativa o Flexbox para o menu */
+    gap: 35px;  /* Espaçamento entre os itens do menu */
+    margin: 0;  /* Remove margem padrão */
+    padding: 0 10%;  /* Remove padding padrão */
+    margin-top: -30px;
+}
+
+.menu-de-navegação a {
+    text-decoration: none;  /* Remove sublinhado dos links */
+    font-family: var(--fonte-2-tecnologias);
+    color: var(--color-p-tecnologias);
+}
+
+.meu-nome-menu {
+    font-family: var(--fonte-1-redit-mono);
+    color: var(--color-h1-titulo);
+}
+
+.texto-secao-um {
+    display: flex; /* Utiliza Grid Layout */
+    flex-direction: column;
+    width: 53%;
+    height: 1080px;
+    margin-top: 136px;
+    position: absolute; /* Posiciona a div filha */
+    top: 0; /* Altera conforme a necessidade */
+    left: 15%; /* Altera conforme a necessidade */
+    background-color: #ff6347; /* Apenas para visualização */
+    background-color: rgba(255, 255, 255, 0.068);
+}
+
+
+/*.texto-secao-um-invertido {
+    display: flex;       
+    flex-direction: column-reverse;  
+    align-items: flex-start;
+}*/
+
+
+.container-icone {
+    display: flex;
+    align-items: flex-start; /* Alinha verticalmente os itens */ 
+}
+
+.icone-informacao {
+    margin: auto;
+    fill: var(--color-icones);
+}
+
+#ferramenta {
+    position: relative;
+    cursor: pointer;
+    font-family: var(--fonte-1-redit-mono);
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.nickname {
+    font-weight: 900;
+}
+
+#ferramenta-informacao {
+    position: absolute;
+    margin-top: 50px;
+    left: 50%;
+    top: 0;
+    transform: translateX(-130%);
+    background-color: var(--color-white-one);
+    color: var(--color-contrast-six);
+    padding: 10px 20px;
+    border-radius: 8px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+#ferramentas-informacao::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+}
+
+#ferramenta:hover #ferramenta-informacao {
+    top: -130%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.cantainer-titulo {
+    display: flex;              /* Alinha os elementos na horizontal */
+    flex-direction: column;
+    align-items: flex-start;    /* Alinha os itens ao topo da div mãe */
+    padding: 0;                 /* Remove o padding, se houver */
+}
+
+h1.apelido {
+    font-family: var(--fonte-1-redit-mono);
+    color: var(--color-h1-titulo);
+    font-weight: 300;
+    font-size: 6.8em;
+    margin-top: -38px;
+    transform: scaleY(0.85);
+    letter-spacing: 0.04em;
+    border: 1px solid black;
+}
+
+
+h2.meu-nome {
+    margin-top: -14px;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte-1-nome);
+    color: var(--color-h2-nome);
+    font-weight: 300;
+    transform: scaleY(1.2);
+    border: 1px solid black;
+}
+
+.container-secao-um-paragrafos {
+    display: flex;
+    border: 1px solid white;
+    margin-top: 60px;
+    margin-left: 0;
+    min-width: 53%;
+    height: 504px;
+}
+
+.descricao-pais {
+    margin-bottom: 1.2em;
+    font-family: var(--fonte-p-bold);
+    font-size: 1.25em;
+    color: var(--color-p-branco);
+    font-weight: 200;
+}
+
+.descricao-nascimento {
+    margin-bottom: 3.4em;
+    font-family: var(--fonte-p-bold);
+    font-size: 1.25em;
+    color: var(--color-p-branco);
+    font-weight: 200;
+}
+
+.descricao-portifolio {
+    margin-bottom: 55px;
+    font-family: var(--fonte-p-bold);
+    font-size: 1.27em;
+    color: var(--color-p-branco);
+    font-weight: 200;
+    line-height: 2.2; 
+}
+
+h2.projeto-rescente {
+    display: inline-block;
+    font-family: var(--fonte-p-bold);
+    color: var(--color-h2-nome);
+}
+
+p.projeto-rescente-p {
+    display: inline;
+    margin-left: 0.65em;
+    font-family: var(--fonte-p-bold);
+    font-size: 1.26em;
+    color: var(--color-p-branco);
+    font-weight: 200;
+    line-height: 2; 
+}
+
+.paragrafo-negrito {
+    font-weight: 800;
+}
+
+.container-secao-um-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 54px;
+    height: 58px;
+    border: 1px solid rgb(0, 255, 21);
+    background-color: rgba(172, 255, 47, 0.322);
+}
+
+.background-icone {
+    margin-right: 16px;
+    display: inline-block; /* Permite centralizar o conteúdo */
+    width: 56px; /* Largura do contêiner */
+    height: 56px; /* Altura do contêiner */
+    background-color: var(--color-icone-fundo);
+    border-radius: 2px; /* Bordas arredondadas (opcional) */
+    border: 1px solid white;
+}
+
+.icone-secao-um {
+    margin: auto;
+    fill: var(--color-icones);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*h2.apelido {
+    margin-top: -38px;
+    font-weight: 300;
+    transform: scaleY(0.85);
+    letter-spacing: 0.15em;
+}*/
+
+
+
+
+
+
+
+
+    
+
+
+
+
+/* --------------------------------------seção dois - video -------------------------*/
+.project-highlight {
+    position: relative;
+    height: 100vh; /* Ajuste conforme necessário */
+}
+
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Faz com que o vídeo ocupe 100% da altura da viewport */
+    object-fit: cover; /* Faz com que o vídeo seja cortado para cobrir toda a área */
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+}
+
+video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: relative;
+    z-index: 10; /* Coloca o conteúdo acima do vídeo */
+    color: rgb(255, 255, 255); /* Ajuste a cor conforme necessário */
+    text-align: center; /* Centraliza o texto */
+}
+
+.info-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 7, 23, 0.955); /* Fundo semi-transparente */
+    color: white;
+    z-index: 20; /* Coloca a sobreposição acima da sobreposição */
+    padding: 20px; /* Adiciona algum espaço interno */
+}
+
+.info-icon img {
+    width: 40px; /* Ajuste o tamanho do ícone */
+}
+
+/* ----------------------------------------- seção depoimentos ----------------------------------------------------------- */
+
+#secao-tres-depoimentos {
+    font-family: Arial, sans-serif;
+    background-color: #efefef;
+}
+
+.pagina-depoimentos {
+    min-height: 52vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    font-family: Arial, sans-serif;
+}
+
+.slide-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 10px 40px;
+}
+
+.slide-one, .slide-two {
+    margin: 0 20px;
+    width: 72%;
+    flex: 1;
+    padding: 5px 10px;
+}
+
+.slide-content {
+    width: 100%;
+    margin: 0 0px;
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    align-items: center;
+    justify-content: left;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    margin-top: 10px 0 10px 0;
+    width: calc(100% - 0px);  /*Dois depoimentos por linha */
+    box-sizing: border-box; /* Inclui padding e margin no cálculo da largura */
+}
+
+.card-image {
+    position: relative;
+    height: 50px;
+    width: 50px;
+}
+
+.image-content {
+    display: flex; /* Ativa o flexbox */
+}
+
+.text-container {
+    display: inline;
+    margin-top: 7px;
+    margin-left: 10px;
+    padding: 0;
+}
+
+.icone-verificado {
+    display: inline;
+    width: 15px; /* Ajuste conforme necessário */
+    height: 15px; /* Ajuste conforme necessário */
+    margin-right: 5px;
+}
+
+.nome-perfil {
+    margin-right: 7px;
+    display: inline;
+    font-size: 16px;
+}
+
+.link-perfil {
+    color: var(--color-contrast-ten);
+    text-decoration: none;
+}
+
+.nome-ficticio {
+    color: #7e7e7e;
+}
+
+.description {
+    margin-left: 60px;
+    margin-bottom: 14px;
+}
+
+.description-link a {
+    margin-left: 60px;
+    color: grey;
+    text-decoration: none;
+}
+
+.card-image  .card-img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.swiper-navBtn {
+   color: var(--color-contrast-seven); 
+   transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+    color: var(--color-contrast-eight); 
+}
+
+.swiper-button-prev {
+    margin-left: 10%;
+}
+
+.swiper-button-next {
+    margin-right: 10%;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--color-contrast-nine);
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--color-contrast-seven);
+}
+
+
+
+
+
+
+/* ----------------------------------------- seção tecnologias----------------------------------------------------------- */
+
+#secao-quatro-tecnologias {
+    position: relative;
+    width: 100%;
+    height: 79vh;
+}
+
+.swiper-pagination-2-bullet {
+    background-color: var(--color-contrast-nine);
+    opacity: 0.1;
+}
+
+.swiper-pagination-2-bullet-active {
+    background-color: var(--color-contrast-seven);
+}
+
+div.container-tecnologias-esquerda {
+    position: absolute;
+    width: 72%;                    
+    height: 78vh;
+    background-image: url(../images/background/background-secao-tecnologias-esquerdo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.container-tecnologias-direita {
+    position: absolute;
+    width: 28%;                    
+    height: 78vh;
+    right: 0;
+    top: 0;
+    min-height: 780px;
+    background-image: url(../images/background/background-scao-tecnologias-direito.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+div.container-body {
+    position: absolute;
+    width: 54%;
+    height: 78%; /* Ajuste conforme o conteúdo */ 
+    right: 0;
+    top: 13.5%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 9999;
+    border: 1px solid greenyellow;
+
+}
+
+div.card-list .card-item  {
+    width: 341px;
+    margin: 0px 28px 0px 20px;
+    background-color: var(--color-contrast-eleven);
+    border-radius: 8px;
+    border: 2px solid white;
+}
+
+/*.card-list .card-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 9px;
+    margin: 10px;
+}*/
+
+
+
+.card-list .card-item .letras-tecnologias {
+    width: 338px;
+    height: 514px;
+    opacity: 0.18;
+    transition: 0.3s ease;
+    border: 2px solid orange;
+}
+
+.card-list .card-item .letras-tecnologias:hover {
+    opacity: 1;
+}
+
+
+ 
+
+
+
+
+
+/*div > a {
+   position: absolute; 
+}
+
+.j-letter {
+    font-family: var(--font-letter-card-tec);
+    font-size: 400px;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 0.73;
+    margin-top: 30px;
+    margin-left: -80px;
+    color: var(--color-contrast-letter-card-tec);
+    border: 2px solid greenyellow;
+    background-color: rgba(172, 255, 47, 0.452);
+    z-index: 1;
+}
+
+.s-letter {
+    font-family: var(--font-letter-card-tec);
+    font-size: 400px;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 0.73;
+    margin-top: 20px;
+    margin-left: 145px;
+    color: var(--color-contrast-letter-card-tec);
+    border: 2px solid greenyellow;
+    background-color: rgba(172, 255, 47, 0.452);
+    z-index: 1;
+}*/
+
+
+
+
+
+
+
+.lateral-tecnologias, .texto-tecnologias {
+    position: absolute; /* Define a posição absoluta das divs filhas */
+    bottom: 0; /* Fixa as divs na parte inferior da div mãe */
+    height: 80%; /* Define a altura das divs filhas como 50% da altura da mãe */
+}
+
+.lateral-tecnologias {
+    left: 0; /* Posiciona a primeira filha à esquerda */
+    width: 13%; /* Largura de 50% */
+    height: 80%;
+    
+}
+
+.curriculo-link {
+    position: absolute;
+    top: 0; /* Encosta no topo da div filha 1 */
+    right: 0; /* Encosta no lado direito da div filha 1 */
+    color: var(--color-p-tecnologias);
+    font-family: var(--fonte-2-tecnologias);
+    font-size: 0.9em;
+    text-decoration: none;
+    transform: rotate(-90deg); /* Rotaciona o texto em 90 graus */
+    transform-origin: top center; /* Define o ponto de origem da rotação */
+    white-space: nowrap; /* Impede a quebra de linha do texto */
+    margin-top: 38px;
+    margin-right: 65px;
+    border-bottom: 1.8px solid transparent; /* Borda invisível inicialmente */
+    transition: border-bottom 0.3s ease;
+}
+
+.curriculo-link:hover:hover {
+    border-bottom: 1.8px solid var(--color-white-one);
+}
+
+.cabecalho-tecnologias {
+    display: flex;
+    width: 1380px;
+    height: 75px;
+}
+
+.logo-secao-tecnologias {
+    display: inline-block;
+    margin-right: 24px;
+    width: 75px;
+    height: 75px;
+}
+
+.h2-tecnologias {
+    margin-top: 20px;
+    color: white;
+    font-family: var(--fonte-2-tecnologias);
+    font-optical-sizing: auto;
+    text-shadow: var(--shadow-h2-tecnologias);
+}
+
+.descricao-tecnologias {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.h3-tecnologias {
+    display: block;
+    margin-top: 70px;
+    color: white;
+    font-family: var(--fonte-2-tecnologias);
+    font-size: 2.81em;
+    font-optical-sizing: auto;
+    letter-spacing: 0.15em;
+    margin-bottom: 40px;
+    text-shadow: var(--shadow-h3-tecnologias);
+}
+
+.p-tecnologias {
+    border: 1px solid white;
+    display: flex;
+    color: var(--color-p-tecnologias);
+    font-family: var(--fonte-2-tecnologias);
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-top: 0;
+    text-shadow: var(--shadow-p-tecnologias);
+}
+
+.quebra-linha {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.texto-tecnologias {
+    display: flex;
+    flex-direction: column;
+    right: 0; /* Posiciona a segunda filha à direita */
+    width: 87%; /* Largura de 50% */
+}
+
+
+
+
+
+
+
+/*---------------------------------seção um skilu ---------------------------- */
+.container-cinco-como-penso {
+    display: flex;
+    height: 100vh;
+    border: 1px solid rgb(238, 255, 0);
+}
+
+.como-penso-lado-esquerdo {
+    width: 72%;                    
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 72%;
+    border: 1px solid rgb(104, 225, 255);
+}
+
+.como-penso-lado-direito {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 30.3%;                    
+    height: 100vh;
+    background-image: url(../images/background/background-scao-tecnologias-direito.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    border: 1px solid greenyellow;
+}
+
+.titulo-como-penso {
+    margin-top: 10vh;
+    margin-bottom: 8vh;
+    font-family: var(--fonte-1-redit-mono);
+    font-size: 2.7em;
+    font-weight: 900;
+    color: var(--color-p-tecnologias);
+    transform: scaleY(0.9);
+    letter-spacing: 0.2em;
+}
+
+.subtitulo-como-penso {
+    margin-bottom: 7vh;
+    font-family: var(--fonte-1-redit-mono);
+    font-size: 1.52em;
+    font-weight: bold;
+    color: var(--color-p-tecnologias);
+    letter-spacing: 0.05em;
+}
+
+.paragrafo-como-penso {
+    margin-bottom: 4vh;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 18.5%;
+    font-family: var(--fonte-1-redit-mono);
+    font-size: 1.31em;
+    font-weight: 300;
+    color: var(--color-p-tecnologias);
+    line-height: 2.2;
+}
+
+.citacao-como-penso {
+    margin-bottom: 1vh;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 17.5%;
+    font-family: var(--fonte-1-redit-mono);
+    font-size: 1.31em;
+    font-weight: 300;
+    color: var(--color-p-tecnologias);
+    line-height: 2.2;
+}
+
+cite.autor-como-penso {
+    margin-bottom: 2vh;
+    margin-right: auto;
+    margin-left: 17%;
+    padding: 0 17.5% 0 0;
+    font-family: var(--fonte-1-redit-mono);
+    font-size: 1.25em;
+    font-weight: 300;
+    color: var(--color-autor-citacao);
+    line-height: 2.2;
+}
+
+span.palavra-negrito {
+    font-weight: 900;
+}
+
+
+.como-penso-lado-esquerdo {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Alinha as filhas em coluna */
+    align-items: flex-end;
+
+}
+
+.rolagem-pagina-ativo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 3%;
+    height: 33%;
+}
+
+.texto-pagina-ativo {
+    margin-right: 14px;
+    padding-bottom: 14px;
+    font-family: var(--fonte-1-redit-mono);
+    font-size: 1.65em;
+    color: var(--color-escuro-fonte);
+
+    border: 1px solid orange;
+    
+    transform: rotate(-90deg); /* Rotaciona o texto em 90 graus */
+    transform-origin: right center; /* Define o ponto de origem da rotação */
+    white-space: nowrap; 
+    margin-left: 1.8vh;
+}
+
+.icone-como-penso-lateral {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    background-color: var(--color-softblue);
+    border-top-right-radius: 8px; /* Arredonda o canto superior direito */
+    border-bottom-right-radius: 8px; /* Arredonda o canto inferior direito */
+    bottom: 55px;
+    left: 0;
+    border: 1px solid orange;
+}
+
+.icone-menu-como-penso {
+    color: var(--color-darkblue);
+}
+
+.texto-oculto-git-como-penso {
+    opacity: 0;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    width: 150px;
+    height: 40px;
+    padding: 0px;
+    font-family: var(--fonte-1-redit-mono);
+    font-size: 1.05em;
+    color: var(--color-white-one);
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.4s ease;
+}
+
+.icone-como-penso-lateral:hover .texto-oculto-git-como-penso {
+    display: block;
+    text-decoration: underline;
+    opacity: 1;
+}
+
+/*----------------------------------------- seção footer --------------------------*/
+
+.secao-seis-rodape {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;   
+    min-height: 442px;      
+    background-image: url(../images/background/background-secao-seis-rodape.jpg);           
+    /*height: 42vh;*/
+    display: flex;
+}
+
+.footer-logo {
+    width: 26%;   
+    min-height: 200px;    
+    margin: 30px 20px 46px 230px ;             
+    /*height: 42vh;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.95em;
+}
+
+.footer-parceiros {
+    position: relative;
+    width: 23.5%;   
+    min-height: 221px;    
+    margin: 30px 176px 46px 10px ;      
+    font-family: var(--fonte-1-redit-mono);
+    color: var(--color-white-one);
+    /*height: 42vh;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.footer-parceiros-pre {
+    margin-top: 22px;
+    margin-bottom: 22px;
+    margin-left: 5%;
+}
+
+pre {
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    font-family: var(--fonte-1-redit-mono);
+    color: var(--color-white-one);
+    font-size: 1.2em;
+    line-height: 1.9;
+    white-space: pre-wrap; /* Faz o texto quebrar quando atingir o limite da largura */
+    width: 100%; /* Para garantir que ocupe toda a largura disponível */
+}
+
+.color-contrast-one {
+    color: var(--color-contrast-one);
+}
+
+.color-contrast-two {
+    color: var(--color-contrast-two);
+}
+
+.color-contrast-three {
+    color: var(--color-contrast-three);
+}
+
+.bold {
+    font-weight: 800;
+    color: var(--color-white-one);
+}
+
+.logo-wagashi {
+    fill: var(--color-white-one);
+    z-index: 10;
+}
+
+.wagashi-position {
+    position: absolute;
+    display: flex;
+    margin-top: 95px;
+    margin-left: 25%;
+}
+
+.logo-blizzard {
+    margin-left: 23%;
+    margin-bottom: 27%;
+    
+    width: 231px;
+    height: 69px;
+}
+
+.footer-contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin: 30px 20px 46px 0px ;             
+    align-items: center;
+    width: 27%;   
+    min-height: 221px;   
+    font-family: var(--fonte-1-redit-mono); 
+    color: var(--color-white-one);
+}
+
+.titulo-contato {
+    margin-top: 24px;
+    position: relative;
+    left: -116px; /* Move o <h2> 20px para a esquerda */
+    font-size: 1.3em;
+    font-weight: 600;
+    transform: scaleY(0.85); /* Aumenta a altura da caixa em 50% */
+    transform-origin: top; /* Define o ponto de origem da escala, o topo da caixa */
+    color: var(--color-contrast-one);
+}
+
+.paragrafo-contato {
+    font-size: 2.5em;
+    color: var(--color-contrast-four);
+}
+
+.quebra-de-linha::before {
+    content: "\A"; /* Insere uma quebra de linha */
+    white-space: pre; /* Permite que a quebra de linha seja renderizada */  
+}
+
+/* --BOTÃO --*/
+.botao {
+    display: flex;
+    background-color: white;
+    text-decoration: none;
+    color: var(--color-contrast-five);
+    font-family: var(--fonte-1-redit-mono);
+    font-size: 0.95em;
+    font-weight:600;
+    justify-content: center;
+    align-items: ce;
+    margin-top: 22px;
+    margin-right: 20px;
+    padding: 14px 130px 14px 36px;
+    border-radius: 500px;
+    transition: all 0.3s;
+}
+
+.botao:hover {
+    transform: scale(0.97);
+} 
+
+.bola-botao {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: end;
+    background-color: var(--color-contrast-one);
+    width: 60px;
+    height: 60px;
+
+}
+
+.container-desenvolvimento {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%; /* Ocupa toda a linha */
+    text-align: left;
+    margin-top: -65px;
+    height: 30px;
+}
+
+.footer-desenvolvimento {
+    padding-top: 15px;
+    font-family: var(--fonte-1-redit-mono);
+    color: var(--color-white-one);
+    font-size: 1.1em;
+    font-weight: 400;
+    letter-spacing: -0.08em;
+    margin-left: 230px;
+    width: 80%;
+}
+
+
+
+.footer-social {
+    margin-top: -35px;
+    margin-left: 1520px;
+    width: 16%;
+}
+
+
+.footer-logo, .footer-parceiros, .footer-contato, .footer-social {
+    flex: 1 1 calc(20% - 20px); /* Dividir em 3 colunas */
+}
+
+.icone-margin {
+    margin-left: 14px;
+}
+
+.icon-footer-color {
+    color: var(--color-contrast-four);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
