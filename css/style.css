@@ -94,7 +94,6 @@ html {
     padding: 0 10%;  /* Adiciona 10% de padding nas laterais */
 
     background-color: #4455681a;  /* Cor de fundo da div filha (opcional) */
-    border: 1px solid aquamarine;
 }
 
 .meu-nome-menu {
@@ -295,7 +294,6 @@ p.projeto-rescente-p {
     height: 56px; /* Altura do contêiner */
     background-color: var(--color-icone-fundo);
     border-radius: 2px; /* Bordas arredondadas (opcional) */
-    border: 1px solid white;
 }
 
 .icone-secao-um {
