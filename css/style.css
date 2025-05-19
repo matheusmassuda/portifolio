@@ -208,7 +208,6 @@ h1.apelido {
     margin-top: -38px;
     transform: scaleY(0.85);
     letter-spacing: 0.04em;
-    border: 1px solid black;
 }
 
 
@@ -220,12 +219,10 @@ h2.meu-nome {
     color: var(--color-h2-nome);
     font-weight: 300;
     transform: scaleY(1.2);
-    border: 1px solid black;
 }
 
 .container-secao-um-paragrafos {
     display: flex;
-    border: 1px solid white;
     margin-top: 60px;
     margin-left: 0;
     min-width: 53%;
@@ -283,8 +280,6 @@ p.projeto-rescente-p {
     align-items: flex-start;
     margin-top: 54px;
     height: 58px;
-    border: 1px solid rgb(0, 255, 21);
-    background-color: rgba(172, 255, 47, 0.322);
 }
 
 .background-icone {
