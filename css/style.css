@@ -93,7 +93,6 @@ html {
     justify-content: space-between;  /* Distribui espaço entre os itens */
     padding: 0 10%;  /* Adiciona 10% de padding nas laterais */
 
-    background-color: #4455681a;  /* Cor de fundo da div filha (opcional) */
 }
 
 .meu-nome-menu {
@@ -130,8 +129,6 @@ html {
     position: absolute; /* Posiciona a div filha */
     top: 0; /* Altera conforme a necessidade */
     left: 15%; /* Altera conforme a necessidade */
-    background-color: #ff6347; /* Apenas para visualização */
-    background-color: rgba(255, 255, 255, 0.068);
 }
 
 
@@ -570,7 +567,6 @@ div.container-body {
     justify-content: center;
     overflow: hidden;
     z-index: 9999;
-    border: 1px solid greenyellow;
 
 }
 
@@ -579,7 +575,6 @@ div.card-list .card-item  {
     margin: 0px 28px 0px 20px;
     background-color: var(--color-contrast-eleven);
     border-radius: 8px;
-    border: 2px solid white;
 }
 
 /*.card-list .card-item {
@@ -598,7 +593,6 @@ div.card-list .card-item  {
     height: 514px;
     opacity: 0.18;
     transition: 0.3s ease;
-    border: 2px solid orange;
 }
 
 .card-list .card-item .letras-tecnologias:hover {
@@ -729,7 +723,6 @@ div.card-list .card-item  {
 }
 
 .p-tecnologias {
-    border: 1px solid white;
     display: flex;
     color: var(--color-p-tecnologias);
     font-family: var(--fonte-2-tecnologias);
@@ -762,7 +755,6 @@ div.card-list .card-item  {
 .container-cinco-como-penso {
     display: flex;
     height: 100vh;
-    border: 1px solid rgb(238, 255, 0);
 }
 
 .como-penso-lado-esquerdo {
@@ -772,7 +764,6 @@ div.card-list .card-item  {
     justify-content: space-between;
     align-items: center;
     width: 72%;
-    border: 1px solid rgb(104, 225, 255);
 }
 
 .como-penso-lado-direito {
@@ -786,7 +777,6 @@ div.card-list .card-item  {
     background-position: center;
     background-repeat: no-repeat;
     align-items: center;
-    border: 1px solid greenyellow;
 }
 
 .titulo-como-penso {
@@ -874,7 +864,6 @@ span.palavra-negrito {
     font-size: 1.65em;
     color: var(--color-escuro-fonte);
 
-    border: 1px solid orange;
     
     transform: rotate(-90deg); /* Rotaciona o texto em 90 graus */
     transform-origin: right center; /* Define o ponto de origem da rotação */
@@ -892,7 +881,6 @@ span.palavra-negrito {
     border-bottom-right-radius: 8px; /* Arredonda o canto inferior direito */
     bottom: 55px;
     left: 0;
-    border: 1px solid orange;
 }
 
 .icone-menu-como-penso {
